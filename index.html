@@ -1,686 +1,1225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sandeep K. Tripathi | Astrologer | Numerologist | Astro-Vastu Consultant</title>
-    <meta
-      name="description"
-      content="Traditional Wisdom. Mathematical Thinking. Practical Guidance. Explore astrology, numerology and Astro-Vastu with a structured, analytical, business-focused approach by Sandeep K. Tripathi."
-    />
-    <meta
-      name="keywords"
-      content="Astrologer, Numerologist, Astro-Vastu, Business Astrology, Financial Astrology, Vedic Astrology, Numerology, Business Name Numerology, Indian astrology consultant"
-    />
-    <meta property="og:title" content="Sandeep K. Tripathi | Astrologer | Numerologist | Astro-Vastu Consultant" />
-    <meta
-      property="og:description"
-      content="Traditional Wisdom. Mathematical Thinking. Practical Guidance."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=80" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="#top" class="brand" aria-label="Sandeep K. Tripathi home">
-            <span class="brand-mark">S</span>
-            <span class="brand-text">
-              <strong>Sandeep K. Tripathi</strong>
-              <small>Astrologer • Numerologist • Astro-Vastu Consultant</small>
-            </span>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandeep K. Tripathi | Astrologer | Numerologist | Astro-Vastu Consultant</title>
+  <meta name="description" content="Traditional Wisdom. Mathematical Thinking. Practical Guidance. Astrology, Numerology and Astro-Vastu with an analytical, business-focused perspective." />
+  <style>
+    :root{
+      --bg:#0a1221;
+      --bg-2:#0f1a2d;
+      --panel:rgba(255,255,255,0.03);
+      --panel-2:rgba(255,255,255,0.02);
+      --line:rgba(255,255,255,0.08);
+      --text:#edf3ff;
+      --muted:#b9c4dc;
+      --gold:#d3af67;
+      --gold-soft:#f1d89a;
+      --warm:#f7ebd4;
+      --shadow:0 25px 60px rgba(3,8,18,0.38);
+      --radius:28px;
+      --container:1180px;
+    }
 
-          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at top, rgba(110,130,180,0.18), transparent 30%),
+        linear-gradient(180deg, #091423 0%, #0d1729 19%, #101d32 100%);
+      color:var(--text);
+      font-family:Arial,Helvetica,sans-serif;
+      line-height:1.7;
+    }
 
-          <nav class="main-nav" aria-label="Main Navigation">
-            <a href="#about">About</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#business">Business & Finance</a>
-            <a href="#numerology">Numerology</a>
-            <a href="#vastu">Astro-Vastu</a>
-            <a href="#insights">Insights</a>
-            <a href="#contact">Contact</a>
-            <a href="#request-guidance" class="nav-cta">Request Guidance</a>
-          </nav>
-        </div>
-      </header>
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    button,input,select,textarea{font:inherit}
+    h1,h2,h3,h4{font-family:Georgia,serif;line-height:1.02;margin:0 0 14px;letter-spacing:-0.02em}
+    h1{font-size:clamp(2.8rem,5vw,5.3rem)}
+    h2{font-size:clamp(2.2rem,4vw,3.5rem)}
+    h3{font-size:clamp(1.6rem,2.1vw,2.5rem)}
+    p{margin:0 0 16px;color:var(--muted)}
+    .container{width:min(var(--container),calc(100% - 32px));margin:0 auto}
+    .section{padding:92px 0}
+    .eyebrow{
+      display:inline-block;
+      margin-bottom:14px;
+      font-size:0.72rem;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--gold-soft);
+      font-weight:700;
+    }
 
-      <main id="top">
-        <section class="hero-section">
-          <div class="hero-bg"></div>
-          <div class="container hero-grid">
-            <div class="hero-copy reveal">
-              <span class="eyebrow">Traditional Wisdom. Mathematical Thinking. Practical Guidance.</span>
-              <h1>
-                Traditional Wisdom.<br />
-                Mathematical Thinking.<br />
-                <span>Practical Guidance.</span>
-              </h1>
-              <p class="hero-text">
-                Astrology, Numerology and Astro-Vastu interpreted through a structured and analytical approach, with a special focus on business, finance, professional and industrial growth.
-              </p>
+    .site-header{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter:blur(14px);
+      background:rgba(9,17,29,0.75);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-wrap{
+      display:flex;align-items:center;justify-content:space-between;
+      min-height:80px;gap:18px;
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand-mark{
+      width:42px;height:42px;border-radius:50%;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,var(--gold),#f5d998);
+      color:#17120c;font-weight:900;
+      box-shadow:0 16px 28px rgba(211,175,103,0.28);
+    }
+    .brand-text{display:flex;flex-direction:column;gap:2px}
+    .brand-text strong{font-size:0.96rem}
+    .brand-text small{color:var(--muted);font-size:0.7rem}
 
-              <div class="hero-meta">
-                <div>
-                  <strong>Sandeep K. Tripathi</strong>
-                  <span>Astrologer • Numerologist • Astro-Vastu Consultant</span>
-                </div>
-                <div>
-                  <strong>M.Sc. Mathematics</strong>
-                  <span>12+ Years Experience</span>
-                </div>
-              </div>
+    .main-nav{
+      display:flex;align-items:center;gap:22px;
+      color:var(--muted);
+    }
+    .main-nav a{
+      position:relative;font-size:0.92rem;
+    }
+    .main-nav a::after{
+      content:"";position:absolute;left:0;bottom:-9px;
+      width:100%;height:1px;background:linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform:scaleX(0);transition:transform .25s ease;
+    }
+    .main-nav a:hover::after{transform:scaleX(1)}
+    .nav-cta,.btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      border-radius:999px;padding:13px 22px;font-weight:700;
+      border:1px solid rgba(211,175,103,0.3);cursor:pointer;transition:.2s ease;
+    }
+    .nav-cta{
+      background:rgba(211,175,103,0.08);color:var(--gold-soft);
+    }
+    .nav-cta:hover,.btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--gold),#f4dba2);
+      color:#17120a;border:none;
+      box-shadow:0 18px 30px rgba(211,175,103,0.22);
+    }
+    .btn-secondary{
+      background:rgba(255,255,255,0.02);color:var(--text);
+    }
 
-              <div class="hero-actions">
-                <a href="#request-guidance" class="btn btn-primary">Request Guidance</a>
-                <a href="#approach" class="btn btn-secondary">Explore My Approach</a>
-              </div>
-            </div>
+    .hero-section{
+      position:relative;overflow:hidden;padding:80px 0 45px;
+    }
+    .hero-section::before{
+      content:"";position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 20% 25%, rgba(211,175,103,0.13), transparent 18%),
+        radial-gradient(circle at 80% 30%, rgba(121,164,224,0.14), transparent 25%);
+      pointer-events:none;
+    }
+    .hero-section::after{
+      content:"";position:absolute;inset:0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size:28px 28px;
+      mask-image:radial-gradient(circle at center, black 52%, transparent 100%);
+      opacity:.5;
+    }
+    .hero-grid{
+      position:relative;z-index:1;
+      display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;
+    }
 
-            <div class="hero-visual reveal">
-              <div class="portrait-card">
-                <div class="portrait-wrap">
-                  <img
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80"
-                    alt="Sandeep K. Tripathi portrait"
-                  />
-                </div>
-                <div class="floating-badge badge-top">
-                  <span class="label">Academic Foundation</span>
-                  <strong>M.Sc. Mathematics</strong>
-                </div>
-                <div class="floating-badge badge-bottom">
-                  <span class="label">Focus</span>
-                  <strong>Business • Finance • Industry</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    .hero-copy{max-width:680px}
+    .hero-copy h1 span{color:var(--gold-soft)}
+    .hero-text{font-size:1.07rem;max-width:620px}
+    .hero-meta{
+      display:grid;grid-template-columns:repeat(2,minmax(180px,1fr));gap:18px;
+      max-width:560px;margin:30px 0 16px;
+    }
+    .hero-meta div{
+      background:rgba(255,255,255,0.02);
+      border:1px solid var(--line);
+      border-radius:18px;padding:18px 20px;
+    }
+    .hero-meta strong{display:block}
+    .hero-meta span{color:var(--muted);font-size:0.76rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px}
 
-        <section class="cred-bar">
-          <div class="container cred-grid">
-            <article class="cred-item reveal">
-              <span class="count" data-count="12">0</span>
-              <small>+ Years</small>
-              <p>Experience in Astrology, Numerology &amp; Astro-Vastu.</p>
-            </article>
-            <article class="cred-item reveal">
-              <span class="count" data-count="3">0</span>
-              <small>Core Systems</small>
-              <p>Astrology, Numerology and traditional Vastu perspectives.</p>
-            </article>
-            <article class="cred-item reveal">
-              <span class="count" data-count="18">0</span>
-              <small>Analytical Lens</small>
-              <p>Structured observation of patterns, cycles and timing.</p>
-            </article>
-            <article class="cred-item reveal">
-              <span class="count" data-count="5">0</span>
-              <small>Business Focus</small>
-              <p>Decision-making support for business, finance and growth.</p>
-            </article>
-          </div>
-        </section>
+    .portrait-card{
+      position:relative;width:min(480px,100%);padding:22px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+      border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow);
+    }
+    .portrait-wrap{
+      overflow:hidden;border-radius:26px;border:1px solid rgba(255,255,255,0.08);
+      aspect-ratio:4/5;background:rgba(255,255,255,0.02);
+    }
+    .portrait-wrap img{
+      width:100%;height:100%;object-fit:cover;filter:saturate(0.75) contrast(1.04);
+    }
+    .floating-badge{
+      position:absolute;background:rgba(10,18,30,0.82);
+      border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:14px 18px;
+      box-shadow:var(--shadow);backdrop-filter:blur(6px);
+    }
+    .floating-badge .label{
+      display:block;color:var(--muted);font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;
+    }
+    .floating-badge strong{display:block;margin-top:6px;font-size:0.94rem}
+    .badge-top{left:-18px;top:30px}
+    .badge-bottom{right:-18px;bottom:28px}
 
-        <section id="about" class="section about-section">
-          <div class="container two-col">
-            <div class="section-intro reveal">
-              <span class="eyebrow">About</span>
-              <h2>An Analytical Approach to Traditional Knowledge</h2>
-            </div>
+    .cred-bar{padding:10px 0 16px}
+    .cred-grid{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;
+    }
+    .cred-item{
+      background:rgba(255,255,255,0.02);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:22px 18px;
+      box-shadow:var(--shadow);
+    }
+    .cred-item .count{
+      display:inline-block;font-size:2.3rem;font-weight:800;color:var(--gold-soft);
+      margin-bottom:4px;
+    }
+    .cred-item small{
+      display:block;text-transform:uppercase;letter-spacing:0.1em;color:var(--text);
+      font-size:0.72rem;margin-bottom:8px;
+    }
+    .cred-item p{margin:0;color:var(--muted)}
 
-            <div class="text-block reveal">
-              <p>
-                Sandeep K. Tripathi brings together an academic background in Mathematics and more than 12 years of experience in studying and applying traditional systems such as Astrology, Numerology and Astro-Vastu for personal and professional guidance.
-              </p>
-              <p>
-                His approach is grounded in careful observation, structured interpretation, patterns, cycles and timing. Rather than fear-based prediction, his work focuses on awareness, informed thinking and practical understanding.
-              </p>
-            </div>
-          </div>
+    .two-col{
+      display:grid;grid-template-columns:0.82fr 1.18fr;align-items:end;gap:48px;
+    }
+    .text-block p{font-size:1.04rem}
+    .philosophy-grid{
+      display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:42px;
+    }
+    .philosophy-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border:1px solid var(--line);border-radius:22px;padding:24px 20px;
+      box-shadow:var(--shadow);
+    }
+    .card-small{
+      display:inline-block;margin-bottom:10px;
+      color:var(--gold-soft);text-transform:uppercase;letter-spacing:0.1em;font-size:0.68rem;
+    }
+    .philosophy-card h3{font-size:1.8rem;margin-bottom:10px}
+    .philosophy-quote{
+      margin-top:38px;padding:26px 28px;border-left:4px solid var(--gold);
+      border-radius:18px;background:rgba(211,175,103,0.04);border-top:1px solid rgba(211,175,103,0.18);border-right:1px solid rgba(211,175,103,0.18);border-bottom:1px solid rgba(211,175,103,0.18);
+    }
+    .philosophy-quote p{
+      margin:0;color:var(--warm);font-family:Georgia,serif;font-size:clamp(1.2rem,2vw,1.8rem);
+    }
 
-          <div class="container philosophy-grid reveal">
-            <div class="philosophy-card">
-              <span class="card-small">Academic Foundation</span>
-              <h3>M.Sc. Mathematics</h3>
-              <p>Structured thinking, pattern recognition and logical interpretation form the basis of the analytical framework.</p>
-            </div>
-            <div class="philosophy-card">
-              <span class="card-small">Experience</span>
-              <h3>12+ Years</h3>
-              <p>Practical exposure across astrology, numerology and Astro-Vastu in personal and professional contexts.</p>
-            </div>
-            <div class="philosophy-card">
-              <span class="card-small">Core Disciplines</span>
-              <h3>Astrology • Numerology • Astro-Vastu</h3>
-              <p>Traditional systems interpreted through methodical observation and contextual understanding.</p>
-            </div>
-            <div class="philosophy-card">
-              <span class="card-small">Business Focus</span>
-              <h3>Finance • Industry • Growth</h3>
-              <p>Special emphasis on timing, business direction, leadership patterns, and operational alignment.</p>
-            </div>
-          </div>
+    .expertise-grid,.article-grid,.video-grid,.tools-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;
+    }
+    .expert-card,.article-card,.tool-box,.video-card,.contact-form,.direction-panel,.process-step,.faq-item{
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);
+    }
+    .expert-card{padding:28px 22px 24px}
+    .icon{
+      width:52px;height:52px;display:grid;place-items:center;border-radius:14px;
+      background:linear-gradient(135deg, rgba(211,175,103,0.12), rgba(255,255,255,0.03));
+      color:var(--gold-soft);font-weight:900;margin-bottom:18px;
+    }
+    .expert-card h3{font-size:2.1rem}
+    .expert-card a{display:inline-block;margin-top:10px;color:var(--gold-soft);font-weight:700}
 
-          <div id="approach" class="container philosophy-quote reveal">
-            <p>
-              “Astrology should be approached as a tool for reflection, pattern recognition and informed thinking—not as a source of fear or absolute certainty.”
-            </p>
-          </div>
-        </section>
+    .business-section{
+      background:rgba(255,255,255,0.015);
+      border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    }
+    .business-grid{
+      display:grid;grid-template-columns:1fr 1.22fr;gap:24px;align-items:start;
+    }
+    .business-copy ul{
+      padding-left:18px;line-height:2;color:var(--muted);margin-top:18px;
+    }
+    .process-flow{display:grid;gap:14px}
+    .process-step{
+      display:grid;grid-template-columns:58px 1fr;gap:16px;align-items:center;padding:18px 20px;
+    }
+    .process-step span{
+      width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
+      background:linear-gradient(135deg, rgba(211,175,103,0.12), rgba(255,255,255,0.03));
+      color:var(--gold-soft);font-weight:900;
+    }
+    .process-step strong{font-size:1.05rem}
 
-        <section id="expertise" class="section expertise-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Core Expertise</span>
-              <h2>Traditional systems interpreted with clarity and depth</h2>
-            </div>
+    .business-name-section{position:relative;overflow:hidden}
+    .business-name-wrap{
+      display:grid;grid-template-columns:1fr 1.2fr;gap:28px;align-items:center;
+    }
+    .mini-form{
+      display:grid;gap:16px;padding:24px;background:rgba(255,255,255,0.02);
+      border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);
+    }
+    label{
+      display:flex;flex-direction:column;gap:8px;color:var(--muted);font-size:0.9rem;
+    }
+    input,select,textarea{
+      width:100%;padding:14px 16px;border-radius:14px;border:1px solid rgba(255,255,255,0.09);
+      background:rgba(255,255,255,0.02);color:var(--text);
+    }
+    textarea{resize:vertical}
+    .result-box{
+      margin-top:20px;padding:18px 20px;border-radius:16px;
+      border:1px solid rgba(211,175,103,0.22);background:rgba(211,175,103,0.04);
+    }
 
-            <div class="expertise-grid">
-              <article class="expert-card reveal">
-                <div class="icon">01</div>
-                <h3>Business Astrology</h3>
-                <p>Astrological perspectives for entrepreneurs and professionals regarding business timing, partnerships, expansion and important milestones.</p>
-                <a href="#business">Explore</a>
-              </article>
+    .numerology-section{background:rgba(255,255,255,0.015)}
+    .numbers-grid{
+      display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:16px;
+    }
+    .number-card{
+      text-align:center;padding:18px 14px;border-radius:20px;
+      border:1px solid var(--line);background:rgba(255,255,255,0.02);
+    }
+    .number-card span{
+      width:64px;height:64px;display:grid;place-items:center;border-radius:50%;
+      background:linear-gradient(135deg, rgba(211,175,103,0.14), rgba(255,255,255,0.03));
+      color:var(--gold-soft);font-weight:900;font-size:1.5rem;margin:0 auto 12px;
+    }
+    .number-card p{font-size:0.8rem;line-height:1.5;margin:0}
 
-              <article class="expert-card reveal">
-                <div class="icon">02</div>
-                <h3>Financial Astrology</h3>
-                <p>Exploration of timing, cycles and awareness in financial decision-making. This is educational and not investment advice.</p>
-                <a href="#business">Explore</a>
-              </article>
+    .vastu-layout{
+      display:grid;grid-template-columns:0.9fr 1.1fr;gap:28px;align-items:center;
+    }
+    .compass-card{
+      position:relative;width:min(460px,100%);aspect-ratio:1;border-radius:50%;
+      background:rgba(10,17,28,0.72);border:1px solid var(--line);margin:0 auto;overflow:hidden;
+    }
+    .compass-card::before,.compass-card::after{
+      content:"";position:absolute;inset:9%;border-radius:50%;border:1px solid rgba(255,255,255,0.08);
+    }
+    .compass-card::after{inset:28%}
+    .direction{
+      position:absolute;transform:translate(-50%,-50%);
+      border-radius:999px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.02);
+      color:var(--muted);padding:10px 12px;cursor:pointer;
+    }
+    .direction.active{
+      background:linear-gradient(135deg, rgba(211,175,103,0.18), rgba(255,255,255,0.03));
+      border-color:rgba(211,175,103,0.35);color:var(--gold-soft);
+    }
+    .direction[data-direction="North"]{left:50%;top:7%}
+    .direction[data-direction="North-East"]{left:76%;top:22%}
+    .direction[data-direction="East"]{left:92%;top:50%}
+    .direction[data-direction="South-East"]{left:76%;top:78%}
+    .direction[data-direction="South"]{left:50%;top:93%}
+    .direction[data-direction="South-West"]{left:24%;top:78%}
+    .direction[data-direction="West"]{left:8%;top:50%}
+    .direction[data-direction="North-West"]{left:24%;top:22%}
 
-              <article class="expert-card reveal">
-                <div class="icon">03</div>
-                <h3>Industrial Growth</h3>
-                <p>Growth-focused analysis for industrial ventures, organizational timing, expansion and practical decision awareness.</p>
-                <a href="#business">Explore</a>
-              </article>
+    .direction-panel{
+      padding:26px 22px;
+    }
+    .direction-panel h3{margin-top:12px;font-size:2.5rem}
+    .direction-panel small{display:block;margin-top:16px;color:var(--muted)}
 
-              <article class="expert-card reveal">
-                <div class="icon">04</div>
-                <h3>Numerology</h3>
-                <p>Traditional numerological interpretation for personal identity, birth patterns, name analysis and business relationship with numbers.</p>
-                <a href="#numerology">Explore</a>
-              </article>
+    .analytics-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;
+    }
+    .chart-box{
+      height:300px;position:relative;border-radius:30px;border:1px solid var(--line);
+      background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+      padding:24px;overflow:hidden;
+    }
+    .chart-line{
+      position:absolute;inset:22px 18px 58px;display:grid;grid-template-columns:repeat(5,1fr);align-items:end;gap:14px;
+    }
+    .chart-line span{
+      display:block;border-radius:16px 16px 0 0;background:linear-gradient(180deg, rgba(211,175,103,0.8), rgba(94,114,170,0.2));
+      box-shadow:0 0 18px rgba(211,175,103,0.12);
+    }
+    .chart-line span:nth-child(1){height:24%}
+    .chart-line span:nth-child(2){height:38%}
+    .chart-line span:nth-child(3){height:56%}
+    .chart-line span:nth-child(4){height:72%}
+    .chart-line span:nth-child(5){height:90%}
+    .chart-labels{
+      position:absolute;left:18px;right:18px;bottom:18px;display:grid;grid-template-columns:repeat(4,1fr);
+      gap:12px;color:var(--muted);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em;
+    }
 
-              <article class="expert-card reveal">
-                <div class="icon">05</div>
-                <h3>Astro-Vastu</h3>
-                <p>Traditional Vastu-informed perspectives for residential, commercial, industrial and workplace alignment.</p>
-                <a href="#vastu">Explore</a>
-              </article>
+    .article-card,.tool-box,.video-card{padding:22px 20px}
+    .article-card h3{font-size:2rem}
+    .article-tag{
+      display:inline-block;padding:7px 10px;border-radius:999px;
+      background:rgba(211,175,103,0.09);color:var(--gold-soft);font-size:0.68rem;
+      border:1px solid rgba(211,175,103,0.2);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:14px;
+    }
+    .article-card a{display:inline-block;margin-top:14px;color:var(--gold-soft);font-weight:700}
 
-              <article class="expert-card reveal">
-                <div class="icon">06</div>
-                <h3>Career &amp; Professional Guidance</h3>
-                <p>Timing and pattern-based insight for professional transitions, education, leadership and career direction.</p>
-                <a href="#business">Explore</a>
-              </article>
-            </div>
-          </div>
-        </section>
+    .tool-box h3{font-size:2rem}
+    .tool-box p{margin-top:18px}
+    .video-thumb{
+      height:220px;border-radius:18px;background-size:cover;background-position:center;
+      margin-bottom:16px;
+    }
+    .thumb-one{background-image:linear-gradient(rgba(10,17,28,0.2), rgba(10,17,28,0.2)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80')}
+    .thumb-two{background-image:linear-gradient(rgba(10,17,28,0.2), rgba(10,17,28,0.2)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80')}
+    .thumb-three{background-image:linear-gradient(rgba(10,17,28,0.2), rgba(10,17,28,0.2)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80')}
 
-        <section id="business" class="section business-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Business &amp; Finance</span>
-              <h2>Astrology for business and professional decisions</h2>
-              <p>Structured insight for entrepreneurs, professionals and organizations.</p>
-            </div>
+    .testimonial-placeholder{
+      padding:40px 20px;text-align:center;border:1px dashed rgba(255,255,255,0.14);border-radius:24px;
+      background:rgba(255,255,255,0.02);
+    }
 
-            <div class="business-grid reveal">
-              <div class="business-copy">
-                <p>
-                  Through a combination of astrology, numerology and Astro-Vastu, Sandeep K. Tripathi examines timing, cycles and environmental alignment in the context of business growth and professional planning.
-                </p>
-                <ul>
-                  <li>Business commencement timing</li>
-                  <li>Business name numerology</li>
-                  <li>Founder analysis</li>
-                  <li>Partnership compatibility</li>
-                  <li>Expansion timing</li>
-                  <li>Organizational alignment and strategic milestones</li>
-                  <li>Corporate &amp; commercial Astro-Vastu</li>
-                  <li>Professional transitions and leadership patterns</li>
-                </ul>
-              </div>
+    .faq-wrap{
+      display:grid;grid-template-columns:0.8fr 1.2fr;gap:26px;align-items:start;
+    }
+    .faq-list{display:grid;gap:16px}
+    .faq-item{overflow:hidden}
+    .faq-question{
+      width:100%;text-align:left;background:transparent;border:none;color:var(--text);
+      padding:20px 22px;cursor:pointer;font-weight:700;font-size:1rem;
+    }
+    .faq-answer{
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .faq-item.active .faq-answer{max-height:220px}
+    .faq-answer p{padding:0 22px 20px;margin:0}
 
-              <div class="process-flow">
-                <div class="process-step"><span>01</span><div><strong>Birth Data / Business Information</strong></div></div>
-                <div class="process-step"><span>02</span><div><strong>Astrological Analysis</strong></div></div>
-                <div class="process-step"><span>03</span><div><strong>Numerological Analysis</strong></div></div>
-                <div class="process-step"><span>04</span><div><strong>Business Context</strong></div></div>
-                <div class="process-step"><span>05</span><div><strong>Timing &amp; Cycles</strong></div></div>
-                <div class="process-step"><span>06</span><div><strong>Astro-Vastu Factors</strong></div></div>
-                <div class="process-step"><span>07</span><div><strong>Structured Guidance</strong></div></div>
-              </div>
-            </div>
-          </div>
-        </section>
+    .contact-section{
+      background:rgba(255,255,255,0.012);border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    }
+    .request-layout{
+      display:grid;grid-template-columns:0.9fr 1.1fr;gap:28px;align-items:start;
+    }
+    .contact-form{
+      padding:28px 22px;
+    }
+    .field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .contact-form label{margin-bottom:12px}
 
-        <section class="section business-name-section reveal">
-          <div class="container business-name-wrap">
-            <div>
-              <span class="eyebrow">Numerology for Business</span>
-              <h2>Does your business name align with your numerical pattern?</h2>
-              <p>
-                Explore the traditional numerological interpretation of your business name and how it may align with your purpose, energy and business identity.
-              </p>
-            </div>
+    .site-footer{
+      padding:52px 0 26px;
+    }
+    .footer-grid{
+      display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px;padding-bottom:28px;
+    }
+    .site-footer h4{margin-bottom:12px;font-size:1.5rem}
+    .site-footer ul{
+      list-style:none;padding:0;margin:0;display:grid;gap:10px;color:var(--muted);
+    }
+    .footer-bottom{
+      border-top:1px solid var(--line);padding-top:18px;color:var(--muted);font-size:0.84rem;
+    }
+    .footer-bottom p{margin:0 0 10px}
 
-            <form id="businessNameForm" class="mini-form">
-              <label>
-                Business Name
-                <input type="text" id="businessNameInput" placeholder="Example: Sandeep Ventures" />
-              </label>
-              <label>
-                Founder Name
-                <input type="text" id="founderNameInput" placeholder="Founder full name" />
-              </label>
-              <label>
-                Date of Birth
-                <input type="date" id="birthDateInput" />
-              </label>
-              <button type="submit" class="btn btn-primary">Explore Interpretation</button>
-            </form>
-          </div>
-          <div class="container result-box" id="businessResultBox" aria-live="polite">
-            <p>For educational and informational purposes only. This does not guarantee outcomes or business results.</p>
-          </div>
-        </section>
+    .nav-toggle{display:none}
+    @media (max-width: 1040px){
+      .main-nav{
+        position:absolute;top:82px;left:16px;right:16px;display:none;flex-direction:column;align-items:flex-start;
+        padding:18px;background:rgba(10,18,30,0.96);border:1px solid var(--line);border-radius:18px;
+      }
+      .main-nav.open{display:flex}
+      .nav-toggle{
+        display:block;background:rgba(255,255,255,0.02);border:1px solid var(--line);border-radius:12px;
+        width:48px;height:48px;padding:10px 12px;cursor:pointer;
+      }
+      .nav-toggle span{display:block;height:2px;background:var(--text);margin:5px 0;border-radius:2px}
+      .hero-grid,.two-col,.business-grid,.business-name-wrap,.vastu-layout,.analytics-grid,.faq-wrap,.request-layout{
+        grid-template-columns:1fr;
+      }
+      .expertise-grid,.article-grid,.video-grid,.tools-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+      .numbers-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+      .cred-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+      .footer-grid{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width: 640px){
+      .section{padding:76px 0}
+      .hero-actions{display:grid}
+      .btn,.nav-cta{width:100%}
+      .hero-meta,.field-grid,.expertise-grid,.article-grid,.video-grid,.tools-grid,.numbers-grid,.cred-grid,.philosophy-grid{grid-template-columns:1fr}
+      .floating-badge{position:static;margin-top:12px}
+      .portrait-card{padding:16px}
+      .brand-text small{display:none}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="Home">
+        <span class="brand-mark">S</span>
+        <span class="brand-text">
+          <strong>Sandeep K. Tripathi</strong>
+          <small>Astrologer • Numerologist • Astro-Vastu Consultant</small>
+        </span>
+      </a>
 
-        <section id="numerology" class="section numerology-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Astro-Numerology</span>
-              <h2>Astrology meets numerology</h2>
-            </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-            <div class="numbers-grid">
-              <div class="number-card reveal"><span>1</span><p>Leadership, independence and initiative.</p></div>
-              <div class="number-card reveal"><span>2</span><p>Balance, sensitivity and partnership dynamics.</p></div>
-              <div class="number-card reveal"><span>3</span><p>Expression, communication and creativity.</p></div>
-              <div class="number-card reveal"><span>4</span><p>Structure, discipline and steadiness.</p></div>
-              <div class="number-card reveal"><span>5</span><p>Movement, flexibility and change.</p></div>
-              <div class="number-card reveal"><span>6</span><p>Responsibility, service and harmony.</p></div>
-              <div class="number-card reveal"><span>7</span><p>Reflection, analysis and spiritual inquiry.</p></div>
-              <div class="number-card reveal"><span>8</span><p>Value, ambition and material cycles.</p></div>
-              <div class="number-card reveal"><span>9</span><p>Completion, compassion and universal outlook.</p></div>
-            </div>
-          </div>
-        </section>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#business">Business &amp; Finance</a>
+        <a href="#numerology">Numerology</a>
+        <a href="#vastu">Astro-Vastu</a>
+        <a href="#insights">Insights</a>
+        <a href="#contact">Contact</a>
+        <a href="#request-guidance" class="nav-cta">Request Guidance</a>
+      </nav>
+    </div>
+  </header>
 
-        <section id="vastu" class="section vastu-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Astro-Vastu</span>
-              <h2>Space, direction and traditional Vastu principles</h2>
-            </div>
-
-            <div class="vastu-layout reveal">
-              <div class="compass-wrap">
-                <div class="compass-card">
-                  <button class="direction active" data-direction="North">North</button>
-                  <button class="direction" data-direction="North-East">North-East</button>
-                  <button class="direction" data-direction="East">East</button>
-                  <button class="direction" data-direction="South-East">South-East</button>
-                  <button class="direction" data-direction="South">South</button>
-                  <button class="direction" data-direction="South-West">South-West</button>
-                  <button class="direction" data-direction="West">West</button>
-                  <button class="direction" data-direction="North-West">North-West</button>
-                </div>
-              </div>
-
-              <div class="direction-panel">
-                <span class="card-small">Direction Insight</span>
-                <h3 id="directionTitle">North</h3>
-                <p id="directionText">
-                  North is traditionally associated with growth, opportunity and a positive flow of resources in many traditional Vastu perspectives. This zone is often explored in relation to career direction, visibility and forward movement.
-                </p>
-                <small>Educational note: Vastu is a traditional system and not a substitute for engineering, architecture, safety or legal compliance.</small>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section analytics-section">
-          <div class="container analytics-grid reveal">
-            <div>
-              <span class="eyebrow">Mathematics &amp; Astrology</span>
-              <h2>Patterns, cycles and structured observation</h2>
-              <p>
-                With an academic background in Mathematics, Sandeep K. Tripathi approaches traditional astrological systems through a disciplined mindset. This does not claim to scientifically prove astrology; rather, it highlights the value of pattern recognition, timing awareness and structured interpretation.
-              </p>
-            </div>
-
-            <div class="chart-box">
-              <div class="chart-line">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="chart-labels">
-                <span>Pattern</span>
-                <span>Cycle</span>
-                <span>Timing</span>
-                <span>Context</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="insights" class="section insights-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Knowledge Hub</span>
-              <h2>Insights, articles and educational ideas</h2>
-            </div>
-
-            <div class="article-grid">
-              <article class="article-card reveal">
-                <span class="article-tag">Astrology</span>
-                <h3>Understanding houses and their practical meaning</h3>
-                <p>Traditional perspectives on houses as contexts for life areas and decision-making.</p>
-                <a href="#">Read more</a>
-              </article>
-              <article class="article-card reveal">
-                <span class="article-tag">Numerology</span>
-                <h3>How name numbers are traditionally interpreted</h3>
-                <p>Exploring the logic behind name-based numerical patterns and identity.</p>
-                <a href="#">Read more</a>
-              </article>
-              <article class="article-card reveal">
-                <span class="article-tag">Business</span>
-                <h3>Timing and strategic awareness for growth</h3>
-                <p>Why timing, cycles and organizational alignment matter in business planning.</p>
-                <a href="#">Read more</a>
-              </article>
-              <article class="article-card reveal">
-                <span class="article-tag">Astro-Vastu</span>
-                <h3>How directions are understood in traditional Vastu</h3>
-                <p>A calm, educational introduction to directional understanding and space.</p>
-                <a href="#">Read more</a>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section tools-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Astrology &amp; Numerology Tools</span>
-              <h2>Educational calculators and tools</h2>
-            </div>
-
-            <div class="tools-grid">
-              <div class="tool-box reveal">
-                <h3>Birth Number Calculator</h3>
-                <label>
-                  Date of Birth
-                  <input type="date" id="birthNumberDate" />
-                </label>
-                <button class="btn btn-primary" id="birthNumberBtn">Calculate</button>
-                <p id="birthNumberResult">Your result will appear here.</p>
-              </div>
-
-              <div class="tool-box reveal">
-                <h3>Life Path / Destiny Number</h3>
-                <label>
-                  Date of Birth
-                  <input type="date" id="destinyDate" />
-                </label>
-                <button class="btn btn-primary" id="destinyBtn">Calculate</button>
-                <p id="destinyResult">Your result will appear here.</p>
-              </div>
-
-              <div class="tool-box reveal">
-                <h3>Name Number Calculator</h3>
-                <label>
-                  Name
-                  <input type="text" id="nameNumberInput" placeholder="Type your name" />
-                </label>
-                <button class="btn btn-primary" id="nameNumberBtn">Calculate</button>
-                <p id="nameNumberResult">Your result will appear here.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section video-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Videos &amp; Discussions</span>
-              <h2>Educational content and lively discussion</h2>
-            </div>
-
-            <div class="video-grid">
-              <div class="video-card reveal">
-                <div class="video-thumb thumb-one"></div>
-                <h3>Astrology basics explained</h3>
-                <p>Simple concepts, clear explanations and practical understandings.</p>
-              </div>
-              <div class="video-card reveal">
-                <div class="video-thumb thumb-two"></div>
-                <h3>Numerology in daily life</h3>
-                <p>Traditional numeric patterns and their broader significance.</p>
-              </div>
-              <div class="video-card reveal">
-                <div class="video-thumb thumb-three"></div>
-                <h3>Business timing perspectives</h3>
-                <p>Understanding timing and decision-making from a business lens.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section testimonials-section">
-          <div class="container">
-            <div class="section-head reveal">
-              <span class="eyebrow">Experiences &amp; Feedback</span>
-              <h2>Thoughtful guidance and reflective feedback</h2>
-            </div>
-
-            <div class="testimonial-placeholder reveal">
-              <p>Experiences shared by visitors and individuals will appear here with their permission.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section faq-section">
-          <div class="container faq-wrap reveal">
-            <div class="section-head left">
-              <span class="eyebrow">FAQ</span>
-              <h2>Questions people often ask</h2>
-            </div>
-
-            <div class="faq-list">
-              <div class="faq-item active">
-                <button class="faq-question">What is your approach to astrology?</button>
-                <div class="faq-answer">
-                  <p>My approach is structured, analytical and practical. I focus on patterns, cycles, timing and context rather than fear-based prediction.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">How is your approach different?</button>
-                <div class="faq-answer">
-                  <p>It combines traditional systems with a mathematical and analytical mindset, emphasizing understanding and decision awareness.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">What is Astro-Numerology?</button>
-                <div class="faq-answer">
-                  <p>It is the combined study of astrological and numerological patterns, exploring how numbers, cycles and planetary influences can be interpreted together.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">Do you provide business-related guidance?</button>
-                <div class="faq-answer">
-                  <p>Yes, business and professional guidance is an important area of focus, especially around timing, direction and structural alignment.</p>
-                </div>
-              </div>
-
-              <div class="faq-item">
-                <button class="faq-question">Can astrology guarantee outcomes?</button>
-                <div class="faq-answer">
-                  <p>No. This website presents traditional interpretive systems for education, reflection and informed decision-making, not guaranteed results.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="request-guidance" class="section contact-section">
-          <div class="container request-layout">
-            <div class="contact-copy reveal">
-              <span class="eyebrow">Request a Guidance Discussion</span>
-              <h2>Share your situation and area of interest</h2>
-              <p>
-                This platform is intended for informational and knowledge-based guidance. Please share your relevant details and the area you would like to understand better.
-              </p>
-            </div>
-
-            <form class="contact-form reveal" id="contactForm">
-              <div class="field-grid">
-                <label>
-                  Full Name
-                  <input type="text" name="name" placeholder="Your full name" required />
-                </label>
-                <label>
-                  Email
-                  <input type="email" name="email" placeholder="name@example.com" required />
-                </label>
-                <label>
-                  Mobile Number
-                  <input type="tel" name="phone" placeholder="Your contact number" />
-                </label>
-                <label>
-                  Date of Birth
-                  <input type="date" name="dob" />
-                </label>
-                <label>
-                  Time of Birth
-                  <input type="time" name="tob" />
-                </label>
-                <label>
-                  Place of Birth
-                  <input type="text" name="pob" placeholder="City / Place" />
-                </label>
-              </div>
-
-              <label>
-                Area of Interest
-                <select name="interest">
-                  <option>Astrology</option>
-                  <option>Numerology</option>
-                  <option>Astro-Vastu</option>
-                  <option>Business</option>
-                  <option>Finance</option>
-                  <option>Industrial Growth</option>
-                  <option>Career</option>
-                  <option>Other</option>
-                </select>
-              </label>
-
-              <label>
-                Business / Professional Details
-                <textarea name="business" rows="4" placeholder="Add relevant context if applicable"></textarea>
-              </label>
-
-              <label>
-                Question / Requirement
-                <textarea name="question" rows="5" placeholder="Tell us what you would like guidance on" required></textarea>
-              </label>
-
-              <label>
-                Preferred Contact Method
-                <select name="contactMethod">
-                  <option>Email</option>
-                  <option>Phone</option>
-                  <option>WhatsApp</option>
-                </select>
-              </label>
-
-              <button type="submit" class="btn btn-primary">Submit Guidance Request</button>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <div class="brand footer-brand">
-              <span class="brand-mark">S</span>
-              <span class="brand-text">
-                <strong>Sandeep K. Tripathi</strong>
-                <small>Astrologer • Numerologist • Astro-Vastu Consultant</small>
-              </span>
-            </div>
-            <p>M.Sc. Mathematics</p>
-            <p>Business • Finance • Industrial Growth</p>
-          </div>
-
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#expertise">Expertise</a></li>
-              <li><a href="#business">Business &amp; Finance</a></li>
-              <li><a href="#numerology">Numerology</a></li>
-              <li><a href="#vastu">Astro-Vastu</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Legal</h4>
-            <ul>
-              <li><a href="#disclaimer">Disclaimer</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#request-guidance">Request Guidance</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4>Connect</h4>
-            <ul>
-              <li><a href="#">YouTube</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">LinkedIn</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div id="disclaimer" class="container footer-bottom">
-          <p>
-            Astrology, numerology and Astro-Vastu presented through this website are traditional interpretive and educational systems intended for informational and personal guidance purposes. They are not a substitute for medical, legal, financial, investment, engineering, architectural or other professional advice. No specific outcome or result is guaranteed.
+  <main id="top">
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Traditional Wisdom. Mathematical Thinking. Practical Guidance.</span>
+          <h1>
+            Traditional Wisdom.<br>
+            Mathematical Thinking.<br>
+            <span>Practical Guidance.</span>
+          </h1>
+          <p class="hero-text">
+            Astrology, Numerology and Astro-Vastu interpreted through a structured and analytical approach, with a special focus on business, finance, professional and industrial growth.
           </p>
-          <p>© <span id="year"></span> Sandeep K. Tripathi. All rights reserved.</p>
+
+          <div class="hero-meta">
+            <div>
+              <strong>Sandeep K. Tripathi</strong>
+              <span>Astrologer • Numerologist • Astro-Vastu Consultant</span>
+            </div>
+            <div>
+              <strong>M.Sc. Mathematics</strong>
+              <span>12+ Years Experience</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#request-guidance" class="btn btn-primary">Request Guidance</a>
+            <a href="#about" class="btn btn-secondary">Explore My Approach</a>
+          </div>
         </div>
-      </footer>
+
+        <div class="hero-visual">
+          <div class="portrait-card">
+            <div class="portrait-wrap">
+              <img src="images/hero-photo.jpg" alt="Sandeep K. Tripathi portrait">
+            </div>
+            <div class="floating-badge badge-top">
+              <span class="label">Academic Foundation</span>
+              <strong>M.Sc. Mathematics</strong>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="label">Focus</span>
+              <strong>Business • Finance • Industry</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cred-bar">
+      <div class="container cred-grid">
+        <article class="cred-item">
+          <span class="count" data-count="12">0</span>
+          <small>+ Years</small>
+          <p>Experience in Astrology, Numerology &amp; Astro-Vastu.</p>
+        </article>
+        <article class="cred-item">
+          <span class="count" data-count="3">0</span>
+          <small>Core Systems</small>
+          <p>Astrology, Numerology and traditional Vastu perspectives.</p>
+        </article>
+        <article class="cred-item">
+          <span class="count" data-count="18">0</span>
+          <small>Analytical Lens</small>
+          <p>Structured observation of patterns, cycles and timing.</p>
+        </article>
+        <article class="cred-item">
+          <span class="count" data-count="5">0</span>
+          <small>Business Focus</small>
+          <p>Decision-making support for business, finance and growth.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">About</span>
+          <h2>An Analytical Approach to Traditional Knowledge</h2>
+        </div>
+
+        <div class="text-block">
+          <p>
+            Sandeep K. Tripathi brings together an academic background in Mathematics and more than 12 years of experience in studying and applying traditional systems such as Astrology, Numerology and Astro-Vastu for personal and professional guidance.
+          </p>
+          <p>
+            His approach is grounded in careful observation, structured interpretation, patterns, cycles and timing. Rather than fear-based prediction, his work focuses on awareness, informed thinking and practical understanding.
+          </p>
+        </div>
+      </div>
+
+      <div class="container philosophy-grid">
+        <div class="philosophy-card">
+          <span class="card-small">Academic Foundation</span>
+          <h3>M.Sc. Mathematics</h3>
+          <p>Structured thinking, pattern recognition and logical interpretation form the basis of the analytical framework.</p>
+        </div>
+        <div class="philosophy-card">
+          <span class="card-small">Experience</span>
+          <h3>12+ Years</h3>
+          <p>Practical exposure across astrology, numerology and Astro-Vastu in personal and professional contexts.</p>
+        </div>
+        <div class="philosophy-card">
+          <span class="card-small">Core Disciplines</span>
+          <h3>Astrology • Numerology • Astro-Vastu</h3>
+          <p>Traditional systems interpreted through methodical observation and contextual understanding.</p>
+        </div>
+        <div class="philosophy-card">
+          <span class="card-small">Business Focus</span>
+          <h3>Finance • Industry • Growth</h3>
+          <p>Special emphasis on timing, business direction, leadership patterns and operational alignment.</p>
+        </div>
+      </div>
+
+      <div class="container philosophy-quote">
+        <p>
+          “Astrology should be approached as a tool for reflection, pattern recognition and informed thinking—not as a source of fear or absolute certainty.”
+        </p>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="container">
+        <div class="eyebrow">Core Expertise</div>
+        <h2>Traditional systems interpreted with clarity and depth</h2>
+
+        <div class="expertise-grid" style="margin-top:26px">
+          <article class="expert-card">
+            <div class="icon">01</div>
+            <h3>Business Astrology</h3>
+            <p>Astrological perspectives for entrepreneurs and professionals regarding business timing, partnerships, expansion and important milestones.</p>
+            <a href="#business">Explore</a>
+          </article>
+
+          <article class="expert-card">
+            <div class="icon">02</div>
+            <h3>Financial Astrology</h3>
+            <p>Exploration of timing, cycles and awareness in financial decision-making. Educational and not investment advice.</p>
+            <a href="#business">Explore</a>
+          </article>
+
+          <article class="expert-card">
+            <div class="icon">03</div>
+            <h3>Industrial Growth</h3>
+            <p>Growth-focused analysis for industrial ventures, organizational timing, expansion and practical decision awareness.</p>
+            <a href="#business">Explore</a>
+          </article>
+
+          <article class="expert-card">
+            <div class="icon">04</div>
+            <h3>Numerology</h3>
+            <p>Traditional numerological interpretation for personal identity, birth patterns, name analysis and business relationship with numbers.</p>
+            <a href="#numerology">Explore</a>
+          </article>
+
+          <article class="expert-card">
+            <div class="icon">05</div>
+            <h3>Astro-Vastu</h3>
+            <p>Traditional Vastu-informed perspectives for residential, commercial, industrial and workplace alignment.</p>
+            <a href="#vastu">Explore</a>
+          </article>
+
+          <article class="expert-card">
+            <div class="icon">06</div>
+            <h3>Career &amp; Professional Guidance</h3>
+            <p>Timing and pattern-based insight for professional transitions, education, leadership and career direction.</p>
+            <a href="#business">Explore</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="business" class="section business-section">
+      <div class="container">
+        <div class="eyebrow">Business &amp; Finance</div>
+        <h2>Astrology for business and professional decisions</h2>
+        <p>Structured insight for entrepreneurs, professionals and organizations.</p>
+
+        <div class="business-grid" style="margin-top:26px">
+          <div class="business-copy">
+            <p>
+              Through a combination of astrology, numerology and Astro-Vastu, Sandeep K. Tripathi examines timing, cycles and environmental alignment in the context of business growth and professional planning.
+            </p>
+            <ul>
+              <li>Business commencement timing</li>
+              <li>Business name numerology</li>
+              <li>Founder analysis</li>
+              <li>Partnership compatibility</li>
+              <li>Expansion timing</li>
+              <li>Organizational alignment and strategic milestones</li>
+              <li>Corporate &amp; commercial Astro-Vastu</li>
+              <li>Professional transitions and leadership patterns</li>
+            </ul>
+          </div>
+
+          <div class="process-flow">
+            <div class="process-step"><span>01</span><div><strong>Birth Data / Business Information</strong></div></div>
+            <div class="process-step"><span>02</span><div><strong>Astrological Analysis</strong></div></div>
+            <div class="process-step"><span>03</span><div><strong>Numerological Analysis</strong></div></div>
+            <div class="process-step"><span>04</span><div><strong>Business Context</strong></div></div>
+            <div class="process-step"><span>05</span><div><strong>Timing &amp; Cycles</strong></div></div>
+            <div class="process-step"><span>06</span><div><strong>Astro-Vastu Factors</strong></div></div>
+            <div class="process-step"><span>07</span><div><strong>Structured Guidance</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container business-name-wrap">
+        <div>
+          <span class="eyebrow">Numerology for Business</span>
+          <h2>Does your business name align with your numerical pattern?</h2>
+          <p>Explore the traditional numerological interpretation of your business name and how it may align with your purpose, energy and business identity.</p>
+        </div>
+
+        <form id="businessNameForm" class="mini-form">
+          <label>
+            Business Name
+            <input type="text" id="businessNameInput" placeholder="Example: Sandeep Ventures" />
+          </label>
+          <label>
+            Founder Name
+            <input type="text" id="founderNameInput" placeholder="Founder full name" />
+          </label>
+          <label>
+            Date of Birth
+            <input type="date" id="birthDateInput" />
+          </label>
+          <button type="submit" class="btn btn-primary">Explore Interpretation</button>
+        </form>
+      </div>
+
+      <div class="container result-box" id="businessResultBox" aria-live="polite">
+        <p>For educational and informational purposes only. This does not guarantee outcomes or business results.</p>
+      </div>
+    </section>
+
+    <section id="numerology" class="section numerology-section">
+      <div class="container">
+        <div class="eyebrow">Astro-Numerology</div>
+        <h2>Astrology meets numerology</h2>
+
+        <div class="numbers-grid" style="margin-top:26px">
+          <div class="number-card"><span>1</span><p>Leadership, independence and initiative.</p></div>
+          <div class="number-card"><span>2</span><p>Balance, sensitivity and partnership dynamics.</p></div>
+          <div class="number-card"><span>3</span><p>Expression, communication and creativity.</p></div>
+          <div class="number-card"><span>4</span><p>Structure, discipline and steadiness.</p></div>
+          <div class="number-card"><span>5</span><p>Movement, flexibility and change.</p></div>
+          <div class="number-card"><span>6</span><p>Responsibility, service and harmony.</p></div>
+          <div class="number-card"><span>7</span><p>Reflection, analysis and spiritual inquiry.</p></div>
+          <div class="number-card"><span>8</span><p>Value, ambition and material cycles.</p></div>
+          <div class="number-card"><span>9</span><p>Completion, compassion and universal outlook.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vastu" class="section">
+      <div class="container">
+        <div class="eyebrow">Astro-Vastu</div>
+        <h2>Space, direction and traditional Vastu principles</h2>
+
+        <div class="vastu-layout" style="margin-top:26px">
+          <div class="compass-card">
+            <button class="direction active" data-direction="North">North</button>
+            <button class="direction" data-direction="North-East">North-East</button>
+            <button class="direction" data-direction="East">East</button>
+            <button class="direction" data-direction="South-East">South-East</button>
+            <button class="direction" data-direction="South">South</button>
+            <button class="direction" data-direction="South-West">South-West</button>
+            <button class="direction" data-direction="West">West</button>
+            <button class="direction" data-direction="North-West">North-West</button>
+          </div>
+
+          <div class="direction-panel">
+            <span class="card-small">Direction Insight</span>
+            <h3 id="directionTitle">North</h3>
+            <p id="directionText">
+              North is traditionally associated with growth, opportunity and a positive flow of resources in many traditional Vastu perspectives. This zone is often explored in relation to career direction, visibility and forward movement.
+            </p>
+            <small>Educational note: Vastu is a traditional system and not a substitute for engineering, architecture, safety or legal compliance.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container analytics-grid">
+        <div>
+          <div class="eyebrow">Mathematics &amp; Astrology</div>
+          <h2>Patterns, cycles and structured observation</h2>
+          <p>
+            With an academic background in Mathematics, Sandeep K. Tripathi approaches traditional astrological systems through a disciplined mindset. This does not claim to scientifically prove astrology; rather, it highlights the value of pattern recognition, timing awareness and structured interpretation.
+          </p>
+        </div>
+
+        <div class="chart-box">
+          <div class="chart-line">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="chart-labels">
+            <span>Pattern</span>
+            <span>Cycle</span>
+            <span>Timing</span>
+            <span>Context</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section">
+      <div class="container">
+        <div class="eyebrow">Knowledge Hub</div>
+        <h2>Insights, articles and educational ideas</h2>
+
+        <div class="article-grid" style="margin-top:26px">
+          <article class="article-card">
+            <span class="article-tag">Astrology</span>
+            <h3>Understanding houses and their practical meaning</h3>
+            <p>Traditional perspectives on houses as contexts for life areas and decision-making.</p>
+            <a href="#">Read more</a>
+          </article>
+
+          <article class="article-card">
+            <span class="article-tag">Numerology</span>
+            <h3>How name numbers are traditionally interpreted</h3>
+            <p>Exploring the logic behind name-based numerical patterns and identity.</p>
+            <a href="#">Read more</a>
+          </article>
+
+          <article class="article-card">
+            <span class="article-tag">Business</span>
+            <h3>Timing and strategic awareness for growth</h3>
+            <p>Why timing, cycles and organizational alignment matter in business planning.</p>
+            <a href="#">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Astrology &amp; Numerology Tools</div>
+        <h2>Educational calculators and tools</h2>
+
+        <div class="tools-grid" style="margin-top:26px">
+          <div class="tool-box">
+            <h3>Birth Number Calculator</h3>
+            <label>
+              Date of Birth
+              <input type="date" id="birthNumberDate" />
+            </label>
+            <button class="btn btn-primary" id="birthNumberBtn" style="margin-top:14px;">Calculate</button>
+            <p id="birthNumberResult">Your result will appear here.</p>
+          </div>
+
+          <div class="tool-box">
+            <h3>Life Path / Destiny Number</h3>
+            <label>
+              Date of Birth
+              <input type="date" id="destinyDate" />
+            </label>
+            <button class="btn btn-primary" id="destinyBtn" style="margin-top:14px;">Calculate</button>
+            <p id="destinyResult">Your result will appear here.</p>
+          </div>
+
+          <div class="tool-box">
+            <h3>Name Number Calculator</h3>
+            <label>
+              Name
+              <input type="text" id="nameNumberInput" placeholder="Type your name" />
+            </label>
+            <button class="btn btn-primary" id="nameNumberBtn" style="margin-top:14px;">Calculate</button>
+            <p id="nameNumberResult">Your result will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Videos &amp; Discussions</div>
+        <h2>Educational content and lively discussion</h2>
+        <div class="video-grid" style="margin-top:26px">
+          <div class="video-card">
+            <div class="video-thumb thumb-one"></div>
+            <h3>Astrology basics explained</h3>
+            <p>Simple concepts, clear explanations and practical understandings.</p>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb thumb-two"></div>
+            <h3>Numerology in daily life</h3>
+            <p>Traditional numeric patterns and their broader significance.</p>
+          </div>
+
+          <div class="video-card">
+            <div class="video-thumb thumb-three"></div>
+            <h3>Business timing perspectives</h3>
+            <p>Understanding timing and decision-making from a business lens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Experiences &amp; Feedback</div>
+        <h2>Thoughtful guidance and reflective feedback</h2>
+        <div class="testimonial-placeholder" style="margin-top:20px">
+          <p>Experiences shared by visitors and individuals will appear here with their permission.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container faq-wrap">
+        <div>
+          <div class="eyebrow">FAQ</div>
+          <h2>Questions people often ask</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <button class="faq-question">What is your approach to astrology?</button>
+            <div class="faq-answer">
+              <p>My approach is structured, analytical and practical. I focus on patterns, cycles, timing and context rather than fear-based prediction.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">How is your approach different?</button>
+            <div class="faq-answer">
+              <p>It combines traditional systems with a mathematical and analytical mindset, emphasizing understanding and decision awareness.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">What is Astro-Numerology?</button>
+            <div class="faq-answer">
+              <p>It is the combined study of astrological and numerological patterns, exploring how numbers, cycles and planetary influences can be interpreted together.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Do you provide business-related guidance?</button>
+            <div class="faq-answer">
+              <p>Yes, business and professional guidance is an important area of focus, especially around timing, direction and structural alignment.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can astrology guarantee outcomes?</button>
+            <div class="faq-answer">
+              <p>No. This website presents traditional interpretive systems for education, reflection and informed decision-making, not guaranteed results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="request-guidance" class="section contact-section">
+      <div class="container request-layout">
+        <div>
+          <div class="eyebrow">Request a Guidance Discussion</div>
+          <h2>Share your situation and area of interest</h2>
+          <p>
+            This platform is intended for informational and knowledge-based guidance. Please share your relevant details and the area you would like to understand better.
+          </p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field-grid">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" required />
+            </label>
+
+            <label>
+              Mobile Number
+              <input type="tel" name="phone" placeholder="Your contact number" />
+            </label>
+
+            <label>
+              Date of Birth
+              <input type="date" name="dob" />
+            </label>
+
+            <label>
+              Time of Birth
+              <input type="time" name="tob" />
+            </label>
+
+            <label>
+              Place of Birth
+              <input type="text" name="pob" placeholder="City / Place" />
+            </label>
+          </div>
+
+          <label>
+            Area of Interest
+            <select name="interest">
+              <option>Astrology</option>
+              <option>Numerology</option>
+              <option>Astro-Vastu</option>
+              <option>Business</option>
+              <option>Finance</option>
+              <option>Industrial Growth</option>
+              <option>Career</option>
+              <option>Other</option>
+            </select>
+          </label>
+
+          <label>
+            Business / Professional Details
+            <textarea name="business" rows="4" placeholder="Add relevant context if applicable"></textarea>
+          </label>
+
+          <label>
+            Question / Requirement
+            <textarea name="question" rows="5" placeholder="Tell us what you would like guidance on" required></textarea>
+          </label>
+
+          <label>
+            Preferred Contact Method
+            <select name="contactMethod">
+              <option>Email</option>
+              <option>Phone</option>
+              <option>WhatsApp</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn btn-primary">Submit Guidance Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-mark">S</span>
+          <span class="brand-text">
+            <strong>Sandeep K. Tripathi</strong>
+            <small>Astrologer • Numerologist • Astro-Vastu Consultant</small>
+          </span>
+        </div>
+        <p style="margin-top:14px">M.Sc. Mathematics</p>
+        <p>Business • Finance • Industrial Growth</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#business">Business &amp; Finance</a></li>
+          <li><a href="#numerology">Numerology</a></li>
+          <li><a href="#vastu">Astro-Vastu</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#request-guidance">Request Guidance</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div class="container footer-bottom" id="disclaimer">
+      <p>
+        Astrology, numerology and Astro-Vastu presented through this website are traditional interpretive and educational systems intended for informational and personal guidance purposes. They are not a substitute for medical, legal, financial, investment, engineering, architectural or other professional advice. No specific outcome or result is guaranteed.
+      </p>
+      <p>© <span id="year"></span> Sandeep K. Tripathi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    navToggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', String(open));
+    });
+
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        navToggle?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const btn = item.querySelector('.faq-question');
+      btn?.addEventListener('click', () => {
+        document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.direction').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.direction').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const dir = btn.dataset.direction;
+        const info = {
+          North: 'North is traditionally associated with growth, opportunity and a positive flow of resources in many traditional Vastu perspectives. This zone is often explored in relation to career direction, visibility and forward movement.',
+          'North-East': 'North-East is often discussed in relation to clarity, learning, spiritual openness and planning. It is commonly associated with intention, freshness and thoughtful progress.',
+          East: 'East is often connected with light, initiative, visibility and timely action. Traditional perspectives frequently relate this direction to communication, new beginnings and positive orientation.',
+          'South-East': 'South-East often draws attention to energy, action, financial movement and resource management in traditional Vastu discourse. It may be linked with practical decisions and momentum.',
+          South: 'South is often associated with stability, focus and strong grounding. In traditional Vastu conversation, it may be explored in relation to energy, discipline and personal resilience.',
+          'South-West': 'South-West is often associated with steadiness, emotional grounding and domestic stability. It is commonly discussed in contexts of comfort, security and long-term consistency.',
+          West: 'West is often linked with observation, reflection, relationships and closure. Traditional perspectives may view it as connected to quality of life and reflective decision-making.',
+          'North-West': 'North-West is frequently connected with networks, support systems, movement in society and external relationships. It may be explored in the context of guidance, partnerships and change.'
+        };
+        document.getElementById('directionTitle').textContent = dir;
+        document.getElementById('directionText').textContent = info[dir];
+      });
+    });
+
+    function animateCounts() {
+      document.querySelectorAll('.count').forEach(el => {
+        const target = Number(el.dataset.count);
+        let start = 0;
+        const timer = setInterval(() => {
+          start += 1;
+          el.textContent = start;
+          if (start >= target) clearInterval(timer);
+        }, 120);
+      });
+    }
+    animateCounts();
+
+    function digitRoot(n){
+      while(n > 9){
+        n = String(n).split('').reduce((a,b)=>a + Number(b), 0);
+      }
+      return n;
+    }
+
+    function nameNumber(name){
+      const map = {
+        A:1,B:2,C:3,D:4,E:5,F:6,G:7,H:8,I:9,J:1,K:2,L:3,M:4,N:5,O:6,P:7,Q:8,R:9,S:1,T:2,U:3,V:4,W:5,X:6,Y:7,Z:8
+      };
+      const total = name.toUpperCase().replace(/[^A-Z]/g,'').split('').reduce((sum, letter) => sum + (map[letter] || 0), 0);
+      return digitRoot(total);
+    }
+
+    document.getElementById('birthNumberBtn').addEventListener('click', () => {
+      const date = document.getElementById('birthNumberDate').value;
+      if (!date) {
+        document.getElementById('birthNumberResult').textContent = 'Please select a valid date of birth.';
+        return;
+      }
+      const digits = date.replace(/-/g, '').split('').filter(ch => /\d/.test(ch)).map(Number);
+      const total = digits.reduce((sum, d) => sum + d, 0);
+      const result = digitRoot(total);
+      document.getElementById('birthNumberResult').textContent = `Birth Number: ${result}. This is an educational numerology interpretation.`;
+    });
+
+    document.getElementById('destinyBtn').addEventListener('click', () => {
+      const date = document.getElementById('destinyDate').value;
+      if (!date) {
+        document.getElementById('destinyResult').textContent = 'Please select a valid date of birth.';
+        return;
+      }
+      const digits = date.replace(/-/g, '').split('').filter(ch => /\d/.test(ch)).map(Number);
+      const total = digits.reduce((sum, d) => sum + d, 0);
+      const result = digitRoot(total);
+      document.getElementById('destinyResult').textContent = `Life Path / Destiny Number: ${result}. This is a traditional numerological interpretation for educational purposes.`;
+    });
+
+    document.getElementById('nameNumberBtn').addEventListener('click', () => {
+      const name = document.getElementById('nameNumberInput').value.trim();
+      if (!name) {
+        document.getElementById('nameNumberResult').textContent = 'Please enter a name.';
+        return;
+      }
+      const result = nameNumber(name);
+      document.getElementById('nameNumberResult').textContent = `Name Number: ${result}. This is an educational numerology interpretation and not a guarantee of any outcome.`;
+    });
+
+    document.getElementById('businessNameForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const businessName = document.getElementById('businessNameInput').value.trim();
+      const founderName = document.getElementById('founderNameInput').value.trim();
+      const birthDate = document.getElementById('birthDateInput').value;
+
+      const resultBox = document.getElementById('businessResultBox');
+      if (!businessName && !founderName && !birthDate) {
+        resultBox.innerHTML = '<p>Please enter business name details to explore a basic interpretation.</p>';
+        return;
+      }
+
+      const businessTotal = nameNumber(businessName || 'Business');
+      const founderTotal = nameNumber(founderName || 'Founder');
+      const dateTotal = birthDate ? digitRoot(birthDate.replace(/-/g, '').split('').filter(ch => /\d/.test(ch)).reduce((sum, c) => sum + Number(c), 0)) : 0;
+
+      resultBox.innerHTML = `
+        <p><strong>Business Name Number:</strong> ${businessTotal}</p>
+        <p><strong>Founder Name Number:</strong> ${founderTotal}</p>
+        <p><strong>Birth-based numeric reference:</strong> ${dateTotal}</p>
+        <p>Traditional numerological interpretation suggests that businesses often benefit from examining name energy, founder identity and timing context together. This is for educational and informational purposes only.</p>
+      `;
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Submitted';
+      btn.disabled = true;
+
+      const msg = document.createElement('p');
+      msg.textContent = 'Thank you. Your request has been received. This platform is intended for knowledge-based and informational guidance.';
+      msg.style.marginTop = '16px';
+      msg.style.color = '#f1d89a';
+      e.target.appendChild(msg);
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
